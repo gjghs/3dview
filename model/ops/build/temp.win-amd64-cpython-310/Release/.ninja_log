@@ -1,0 +1,4 @@
+# ninja log v5
+1	3711	7250944656404339	C:/Users/Simon/projects/Deformable-DETR/models/ops/build/temp.win-amd64-cpython-310/Release/Users/Simon/projects/Deformable-DETR/models/ops/src/cpu/ms_deform_attn_cpu.obj	a0bdb4a29f17b263
+8	9511	7250944714372211	C:/Users/Simon/projects/Deformable-DETR/models/ops/build/temp.win-amd64-cpython-310/Release/Users/Simon/projects/Deformable-DETR/models/ops/src/vision.obj	5acefc0d934fcdba
+6	14511	7250944764199554	C:/Users/Simon/projects/Deformable-DETR/models/ops/build/temp.win-amd64-cpython-310/Release/Users/Simon/projects/Deformable-DETR/models/ops/src/cuda/ms_deform_attn_cuda.obj	e8c82bbdce1e2fc0
