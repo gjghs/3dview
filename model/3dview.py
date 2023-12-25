@@ -43,13 +43,15 @@ class BaseModel(nn.Module):
                 torch.sum(self.codebook.weight**2, dim=1) - 2 * \
                 torch.matmul(ze, self.codebook.weight.t())
             
-            min_encoding_indices = torch.argmin(distance, dim=1)
-            zq = self.codebook(min_encoding_indices)
+            min_embedding_indices = torch.argmin(distance, dim=1)
+            zq = self.codebook(min_embedding_indices)
 
             decoder_input = ze + (zq - ze).detach()
+            decoder_input = decoder_input.reshape(N, -1, C)
 
         else:
             decoder_input = self.codebook.weight.data
+            decoder_input = decoder_input.unsqueeze(0)
         
 
         view_embed = self.view_proj(view)
